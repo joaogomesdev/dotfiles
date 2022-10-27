@@ -1,4 +1,6 @@
 require('joaogomesdev.set')
-require('joaogomesdev.packer')
+require('joaogomesdev.plugins')
 require('joaogomesdev.telescope')
 require('joaogomesdev.keymaps')
+require('joaogomesdev.lspconfig')
+require('joaogomesdev.highlights')
