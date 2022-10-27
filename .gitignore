@@ -1,4 +1,4 @@
-nvim/.config/nvim/plugin/packer_compiled.lua
+nvim/plugin/packer_compiled.lua
 neofetch
 yarn
 sao-nodejs
