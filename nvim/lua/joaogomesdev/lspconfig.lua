@@ -8,7 +8,7 @@ local enable_format_on_save = function(_, bufnr)
   vim.api.nvim_clear_autocmds({ group = augroup_format, buffer = bufnr })
   vim.api.nvim_create_autocmd("BufWritePre", {
     group = augroup_format,
-    buffer = bufnr, 
+    buffer = bufnr,
     callback = function()
       vim.lsp.buf.format({ bufnr = bufnr })
     end,
@@ -63,6 +63,9 @@ nvim_lsp.sumneko_lua.setup {
     },
   },
 }
+
+
+nvim_lsp.tailwindcss.setup {}
 
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
