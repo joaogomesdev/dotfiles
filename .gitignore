@@ -5,7 +5,6 @@ sao-nodejs
 configstore
 planetscale
 node_modules
-fish
 gh
 stripe 
 .DS_Store
