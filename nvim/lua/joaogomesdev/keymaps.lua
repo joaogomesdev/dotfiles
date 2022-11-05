@@ -1,7 +1,6 @@
 local keymap = vim.keymap
 
 keymap.set('n', 'x', '"_x')
-keymap.set('n', '<leader>e', '<cmd>Ex<CR>')
 -- Increment/decrement
 keymap.set('n', '+', '<C-a>')
 keymap.set('n', '-', '<C-x>')

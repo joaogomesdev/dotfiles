@@ -8,6 +8,8 @@ vim.opt.fileencoding = 'utf-8'
 vim.opt.relativenumber = true
 vim.wo.number = true
 
+vim.opt.termguicolors = true
+
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true

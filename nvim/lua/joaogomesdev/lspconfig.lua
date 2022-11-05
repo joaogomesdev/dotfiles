@@ -64,8 +64,19 @@ nvim_lsp.sumneko_lua.setup {
   },
 }
 
+-- Tailwind CSS
+local tw_highlight = require("tailwind-highlight")
+nvim_lsp.tailwindcss.setup({
+  on_attach = function(client, bufnr)
+    tw_highlight.setup(client, bufnr, {
+      single_column = false,
+      mode = "background",
+      debounce = 200,
+    })
 
-nvim_lsp.tailwindcss.setup {}
+    on_attach(client, bufnr)
+  end,
+})
 
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
